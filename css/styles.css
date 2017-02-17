@@ -1,0 +1,12 @@
+.jumbotron{
+  text-align: center;
+  background-image: url("../ip2/assets/backgrounds/landing.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foods{
+  text-align: left;
+}
+.drinks{
+  text-align: right;
+}
