@@ -34,3 +34,6 @@ label{
 .img{
   color: orange;
 }
+li{
+  list-style: none;
+}
