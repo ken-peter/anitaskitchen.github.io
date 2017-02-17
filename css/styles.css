@@ -11,6 +11,26 @@
 .drinks{
   text-align: right;
 }
+#email{
+  background-image: url("../ip2/assets/backgrounds/subscribe.jpg");
+  height: 300px;
+  padding-top: 100px;
+}
+#customers{
+  text-align: center;
+}
 .container text-center{
-  background-image: url("../ip2\assets\backgrounds\subscribe.jpg")
+  color: white;
+}
+.email{
+  color: white;
+}
+label{
+  color: white;
+}
+#footer{
+  background-color: orange;
+}
+.img{
+  color: orange;
 }
