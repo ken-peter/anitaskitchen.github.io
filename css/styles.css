@@ -3,10 +3,14 @@
   background-image: url("../ip2/assets/backgrounds/landing.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  color: white;
 }
 .foods{
   text-align: left;
 }
 .drinks{
   text-align: right;
+}
+.container text-center{
+  background-image: url("../ip2\assets\backgrounds\subscribe.jpg")
 }
