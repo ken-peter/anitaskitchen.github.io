@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>menu</title>
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -25,19 +26,53 @@
     </div><!-- end jumbotron -->
     <div class="container">
 <!-- create the happy hour -->
-<div class="container">
 <div class="col-lg-3">
-  <button type="prompt" class="button btn-default"><h1>Happy Hour</h1></button><br>
-  <button type="prompt" class="button btn-warning"><h1>Party Time</h1></button>
+<!--  <button type="prompt" class="button btn-default" id="happy"><h1>Happy Hour</h1></button><br>
+  <button type="prompt" class="button btn-warning" id="party"><h1>Party Time</h1></button>-->
+<!--  <style type="text/css">
+  #div1, #div2{
+  visibility: hidden;
+  }
+  </style>
+  <script>
+  function show(id) {
+  document.getElementById(id).style.visibility = "visible";
+  }
+  function hide(id) {
+  document.getElementById(id).style.visibility = "hidden";
+  }
+</script> -->
+
+  <table id="table">
+    <tr>
+      <td id="happy">Happy Hour</td>
+<!--<div onMouseOver="show('div1')" onMouseOut="hide('div1')">
+  <div id="div1">Hello! Get a free meal for two for every Ksh 1000 spent from 10pm to 11pm over the weekdays and 7pm to 8pm over the weekends!!Amazing right!!</div>
+</div>-->
+    </tr>
+    <td id="party"><div style='height: 20px; width: 120px; background-color: cyan;' id='mouse_over'>Rock on with the fanciest band in town every Friday night with a free bottle of champagne per couple. The first ten will get a shopping coupon. What are you waiting for!!</div>
+</div>Party Time</td>
+    <!--<div onMouseOver="show('div2')" onMouseOut="hide('div2')">
+      <div id="div2">Rock on with the fanciest band in town every Friday night with a free bottle of champagne per couple. The first ten will get a shopping coupon. What are you waiting for!!</div>
+    </div>-->
+  </table>
 </div>
 <div class="col-lg-3">
-  <img src="ip2\assets\foodtop\breakfast.jpg">
+  <div class="image">
+      <img src="ip2\assets\foodtop\breakfast.jpg" alt="" />
+      <p class="breakfast"><em>Breakfast</em></p>
+</div>
+  </div>
+<div class="col-lg-3">
+  <div class="image">
+      <img src="ip2\assets\foodtop\lunch.jpg" alt="" />
+      <p class="breakfast"><em>Lunch</em></p>
+</div>
 </div>
 <div class="col-lg-3">
-  <img src="ip2\assets\foodtop\lunch.jpg">
-</div>
-<div class="col-lg-3">
-  <img src="ip2\assets\foodtop\dinner2.jpg">
+  <div class="image">
+      <img src="ip2\assets\foodtop\dinner.jpg" alt="" />
+      <p class="breakfast"><em>Dinner</em></p>
 </div>
 </div>
     </div><!-- end container -->
@@ -63,10 +98,15 @@
     </div>
     <div class="jumbotron2">
       <div class="container text-center" id="fast">
-        <img src="ip2\assets\fastfood\chickenBurger.jpg">
-        <img src="ip2\assets\fastfood\beefBurger.jpg">
-        <img src="ip2\assets\fastfood\chickenPizza.jpg">
-      </div><!-- close container -->
+        <div class="table-responsive">
+  <table class="table">
+    <img src="ip2\assets\fastfood\chickenBurger.jpg">
+    <img src="ip2\assets\fastfood\beefBurger.jpg">
+    <img src="ip2\assets\fastfood\chickenPizza.jpg">
+
+  </table>
+</div>
+            </div><!-- close container -->
     </div><!-- end jumbotron2 -->
             <div class="container" id="customers">
         <div class="col-lg-8">
@@ -90,14 +130,14 @@
         <div class="form-group">
           <input type="text" class="form-control" id="subscription" placeholder="Your email">
         </div>
-<button type="submit" class="btn btn-warning">Subscribe</button>
+<button type="submit" class="btn btn-orange">Subscribe</button>
       </form>
     </div><!-- close container -->
     <div class="container" id="footer">
       <h2><img src="ip2\assets\footerlogos\logo_white.png"><strong>MENU</h2>
       <p>That's what we are</p>
       <div class="img">
-        <img src="ip2\assets\footerlogos\facebook.png">
+        <li><img src="ip2\assets\footerlogos\facebook.png"></li>
         <img src="ip2\assets\footerlogos\pinterest.png">
         <img src="ip2\assets\footerlogos\twitter.png">
       </div>

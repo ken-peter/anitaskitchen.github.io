@@ -6,6 +6,10 @@
   color: white;
 padding-top: 10px;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .foods{
   text-align: left;
 }
@@ -24,10 +28,10 @@ padding-top: 10px;
   color: white;
 }
 .email{
-  color: white;
+  color: #F15A29;
 }
 label{
-  color: white;
+  color: transparent;
 }
 #footer{
   background-color: orange;
@@ -45,10 +49,6 @@ li{
   height: 50%;
   width: 50%;
 }
-.button{
-  height: 105px;
-  width: 290px;
-}
 .jumbotron2{
   background-image: url("../ip2/assets/backgrounds/foodsBg.jpg");
   height: 500px;
@@ -59,6 +59,46 @@ li{
 .recommend{
   font-size: 20px;
 }
-.container{
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
 
+.breakfast{
+   position: absolute;
+   top: 100px;
+   left: 40%;
+   width: 100%;
+   color: white;
+}
+i {
+  color: #F15A29;
+}
+.button:hover{
+color: skyblue;
+background-color: rgba(0,0,0,0.1);
+
+}
+#party {
+  background-color: #F15A29;
+  padding-left: 30%;
+  font-size: 18pt;
+  color: white;
+}
+#happy {
+  padding-left: 30%;
+  font-size: 18pt;
+}
+#table{
+  border-style: hidden;
+  clear: none;
+  width: 285px;
+  height: 210px;
+}
+#mouse_over {
+  opacity: -10;
+}
+
+#mouse_over:hover {
+  opacity: 1;
 }
