@@ -4,29 +4,33 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>menu</title>
-  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- creating navbar and jumbotron -->
+  <!-- Hamburger -->
   <div class="jumbotron">
-    <div class="container">
-      <nav class="nav-hide">
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </nav>
+    <div class="navbar-toggle">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
 
-      <img src="ip2/assets/logoBig.png">
-      <p>We Provide The Best Food <br>At The <strong>Right Price<strong></p>
-        </div><!-- end container -->
+    <!-- Hidden Menu -->
+    <nav class="nav-hide">
+      <ul class="list-unstyled">
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
+    </nav>
+
+    <img src="ip2/assets/logoBig.png">
+    <p>We Provide The Best Food <br>At The <strong>Right Price<strong></p>
+
     </div><!-- end jumbotron -->
-    <div class="container">
 <!-- create the happy hour -->
 <div class="col-lg-3">
 <!--  <button type="prompt" class="button btn-default" id="happy"><h1>Happy Hour</h1></button><br>
@@ -61,7 +65,7 @@
   </table>
 </div>
 <div class="col-lg-3">
-  <div class="image">
+  <div class="image" style="image-size:100%;">
       <img src="ip2\assets\foodtop\breakfast.jpg">
       <p class="breakfast"><em>Breakfast</em></p>
 </div>
@@ -86,47 +90,122 @@
       </div>
       <div class="col-lg-6">
       <h1 class="foods">Fast Food<br><small>You'll love our delicious fast food</h1>
-        <p class="foods">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <p class="foods">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        <br><br><span id="gallery">View Gallery <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></span></p>
       </div>
     </div>
       <div class="container">
       <div class="col-lg-6">
         <h1 class="drinks">Drinks<br><small>We also produce delicious drinks</small></h1>
-<p class="drinks">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+<p class="drinks">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.  <br><br><span id="gallery">View Gallery <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></span></p>
       </div>
       <div class="col-lg-6" id="pics">
         <img src="ip2/assets/drink1.jpg">
         <img src="ip2/assets/drink2.jpg">
       </div>
     </div>
-    <div class="jumbotron2">
-      <div class="container text-center" id="fast">
-        <div class="table-responsive">
-  <table class="table">
-    <img src="ip2\assets\fastfood\chickenBurger.jpg">
-    <img src="ip2\assets\fastfood\beefBurger.jpg">
-    <img src="ip2\assets\fastfood\chickenPizza.jpg">
+    <div class="container" id="foods">
+    <div class="row">
+      <ul class="nav nav-tabs nav-fill" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#fast-food-tab" role="tab">Fast Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#drinks-tab" role="tab">Drinks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#chicken-tab" role="tab">Chicken</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#rice-tab" role="tab">Rice</a>
+        </li>
+      </ul>
 
-  </table>
-</div>
-            </div><!-- close container -->
-    </div><!-- end jumbotron2 -->
-            <div class="container" id="customers">
-        <div class="col-lg-8">
-          <h1>Our happy customers</h1>
-<h3>George Richard</h3>
-<p class="recommend">Great food! Menu is awesome, their foods are not only great but also in the right price. I'll highly recommend them :)</p><br>
-<img src="ip2\assets\customers\p1.png">
-<img src="ip2\assets\customers\p2.png">
-<img src="ip2\assets\customers\p3.png">
+      <div class="tab-content">
+        <div class="tab-pane active" id="fast-food-tab" role="tabpanel">
+          <div class="tab-item">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
           </div>
-            <div class="container">
-      <div class="col-lg-4">
-        <h1>About Menu</h1>
-        <p>We are a little team of 7 members.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
-
+          <div class="tab-item">
+            <img src="ip2/assets/fastfood/chickenBurger.jpg" alt="Chicken Burger">
+            <p>Chicken Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="ip2/assets/fastfood/beefBurger.jpg" alt="Beef Burger">
+            <p>Beef Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="ip2/assets/fastfood/chickenPizza.jpg" alt="Chicken Pizza">
+            <p>Chicken Pizza</p>
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="tab-pane" id="drinks-tab" role="tabpanel">
+          <div class="tab-item">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Chicken Burger">
+            <p>Chicken Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Beef Burger">
+            <p>Beef Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Chicken Pizza">
+            <p>Chicken Pizza</p>
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="tab-pane" id="chicken-tab" role="tabpanel">
+          <div class="tab-item">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Chicken Burger">
+            <p>Chicken Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Beef Burger">
+            <p>Beef Burger</p>
+          </div>
+          <div class="tab-item">
+            <img src="http://placehold.it/280x220" alt="Chicken Pizza">
+            <p>Chicken Pizza</p>
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+    <div class="container">
+      <div class="container-fluid" id="customers">
+      <div class="col-lg-8">
+      <h1>Our happy customers</h1>
+      <h3>George Richard</h3>
+      <p class="recommend">Great food! Menu is awesome, their foods are not only great but also in the right price. I'll highly recommend them :)</p><br>
+    <span id="custs" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <img id="picscusts" src="ip2\assets\customers\p1.png">
+      <img id="picscusts" src="ip2\assets\customers\p2.png">
+      <img id="picscusts" src="ip2\assets\customers\p3.png">
+      <span id="custs" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </div>
+      <div class="col-lg-4">
+      <h1>About Menu</h1>
+      <p>We are a little team of 7 members.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+
+      </div>
+      </div>
+    </div>
+
     <div class="container" id="email">
       <p class="email">Get our daily food items delivered to your email</p>
       <form class="form-inline" action="">
@@ -139,11 +218,14 @@
     <div class="container" id="footer">
       <h2><img src="ip2\assets\footerlogos\logo_white.png"><strong>MENU</h2>
       <p>That's what we are</p>
-      <div class="img">
-        <li><img src="ip2\assets\footerlogos\facebook.png"></li>
+      <ul class="logos">
+        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      </ul>
+      <!-- <div class="img">
+        <img src="ip2\assets\footerlogos\facebook.png">
         <img src="ip2\assets\footerlogos\pinterest.png">
         <img src="ip2\assets\footerlogos\twitter.png">
-      </div>
+      </div> -->
 <br>
 <footer>2016 Menu Restaurant</footer>
     </div>
